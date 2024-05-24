@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #0CF2F2;
+    --cor-terciaria: #0CF25D;
+    --cor-quarternaria: #f6f6f6;
+
+    --fonte-primaria: 'Chive Mono', monospace;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho{
+    padding: 2% 0% 0% 15%;
+}
+.cabecalho__opcoes{
+    display: flex;
+    gap: 48px;
+}
+.cabecalho__opcoes__link{
+    font-family: var(--fonte-primaria);
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--cor-terciaria);
+}
+
+/* Home */
+
+.curriculo{
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+.curriculo__bio{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.curriculo__bio__titulo{
+    font-size: 3rem;
+    font-family: var(--fonte-primaria);
+}
+
+.curriculo__bio__texto{
+    font-size: 2rem;
+    text-align: start;
+    font-family: var(--fonte-primaria);
+    color: var(--cor-quarternaria);
+}
+
+.curriculo__links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+.curriculo__links__subtitulo{
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 3rem;
+}
+.curriculo__links__acct{
+    display: flex;
+    justify-content: center;
+    border: 2px solid var(--cor-terciaria);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-quarternaria);
+    font-family: var(--fonte-primaria);
+}
+.curriculo__links__acct:hover{
+    background-color: var(--cor-terciaria);
+}
+.curriculo__imagem{
+    width: 50%;
+    border-style: groove;
+    border-width: thick;
+    border-radius: 50%;
+    border-color: var(--cor-secundaria);
+}
+.rodape{
+    color: var(--cor-quarternaria);
+    background-color: var(--cor-primaria);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem;
+    border-color: var(--cor-terciaria);
+    border-style: solid;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+}
+
+@media (max-width: 1200px) {
+    .cabecalho{
+         padding: 10%;  
+    }
+    .cabecalho__opcoes{
+        justify-content: center;
+    }
+    .curriculo{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .curriculo__bio{
+        width: auto;
+    }
+}
+
+/* Habilidades */
+
+.curriculo__imagem__hab{
+    width: 50%;
+    border-style: groove;
+    border-width: thick;
+    border-radius: 50%;
+    border-color: var(--cor-secundaria);
+}
+
+.certificados{
+    display: flex;
+    justify-content: center;
+    border: 2px solid var(--cor-terciaria);
+    width: 50%;
+    text-align: start;
+    border-radius: 8px;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 16px 0;
+    color: var(--cor-quarternaria);
+    font-family: var(--fonte-primaria);
+}
+
+.certificados:hover{
+    background-color: var(--cor-terciaria);
+}
+
+/* Projetos */
+
+.projct{
+    padding: 5% 15% 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 120px;
+}
+
+.projct__bio{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.projct__bio__titulo{
+    font-size: 3rem;
+    font-family: var(--fonte-primaria);
+}
+
+.projct__bio__texto{
+    font-size: 2rem;
+    text-align: start;
+    font-family: var(--fonte-primaria);
+    color: var(--cor-quarternaria);
+}
+
+.projct__imagens{
+    display: flex;
+    flex-direction: row;
+    gap: 64px;
+}
+
+.projct__imagem{
+    width: 550px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10%;
+    border-style: groove;
+    border-width: thick;
+    border-color: var(--cor-secundaria);
+}
+
+@media (max-width: 1200px) {
+    .projct{
+        flex-direction: column;
+        padding: 5%;
+    }
+    .projct__bio{
+        width: auto;
+    }
+    .projct__imagens{
+        display: inline-block;
+    }
+}
